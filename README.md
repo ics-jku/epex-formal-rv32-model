@@ -1,7 +1,7 @@
 # epex-model
 This project contains a formal 32-bit RISC-V model for program synthesis at the instruction level.
 Program synthesis is performed by first specifying the initial (pre) register values and the target (post) register values
-ans then solving using an smt solver. If a program that satisfies these conditions exists it 
+and then solving the instance using an smt solver.
 
 ## Usage
 To generate an smt2 description for *i* unrolled instructions run `make smt n=i`.
