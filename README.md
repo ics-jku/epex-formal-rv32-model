@@ -1,9 +1,9 @@
-## epex-model
+# epex-model
 This project contains a formal 32-bit RISC-V model for program synthesis at the instruction level.
 Program synthesis is performed by first specifying the initial (pre) register values and the target (post) register values
 ans then solving using an smt solver. If a program that satisfies these conditions exists it 
 
-# Usage
+## Usage
 To generate an smt2 description for *i* unrolled instructions run `make smt n=i`.
 In the resulting smt2 description the *pre* and *post* registers are replaced by *boost format* placeholders using
 the following naming scheme:
@@ -33,7 +33,7 @@ The exemplary *pre* and *post* state can be modified in `example.py`.
 ## CBMC
 The model supports CBMC version 5.11.
 
-# Reference
+## Reference
 If you use or find this project helpful, please cite the following paper:
 
 ```
@@ -48,5 +48,5 @@ If you use or find this project helpful, please cite the following paper:
 The paper is available at: https://www.ics.jku.at/files/2021GLSVLSI_EPEX.pdf
 
 
-# Acknowledgements
+## Acknowledgements
 We thank Vladimir Herdt for many interesting discussions and valuable advices.
